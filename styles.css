@@ -1,1 +1,366 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal */
+    background-color: #ADD8E6; /* Color de fondo azul claro */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    display: flex; /* Usar Flexbox para centrar contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 100vw; /* Ancho total de la ventana */
+    height: 100vh; /* Altura total de la ventana */
+    overflow: hidden; /* Prevenir desplazamiento */
+}
 
+/* Estilos para las pantallas */
+.screen {
+    display: none; /* Ocultar pantallas por defecto */
+    flex-direction: column; /* Colocar elementos en columna */
+    align-items: center; /* Centrar elementos horizontalmente */
+    justify-content: flex-start; /* Alinear elementos verticalmente al inicio */
+    width: 90vw; /* Ancho del 90% de la ventana */
+    height: 90vh; /* Altura del 90% de la ventana */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
+    padding: 20px; /* Padding alrededor del contenido */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+}
+
+/* Mostrar pantalla activa */
+.screen.active {
+    display: flex; /* Mostrar la pantalla activa */
+}
+
+/* Estilos para el cuadrado */
+.square {
+    width: 50%; /* Ancho del 50% del contenedor */
+    height: auto; /* Altura automática para mantener proporciones */
+    max-width: 200px; /* Ancho máximo de 200px */
+    max-height: 200px; /* Altura máxima de 200px */
+    border: 2px solid #000000; /* Borde negro */
+    border-radius: 15px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo del cuadrado */
+    background-color: #FFFFFF; /* Fondo blanco */
+    display: flex; /* Usar Flexbox para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilos para el logo */
+.logo {
+    max-width: 100%; /* Ancho máximo 100% */
+    max-height: 100%; /* Altura máxima 100% */
+}
+
+/* Estilos para la foto de perfil */
+.profile-pic {
+    width: 25vw; /* Ancho del 25% de la ventana */
+    height: 25vw; /* Altura del 25% de la ventana */
+    max-width: 100px; /* Ancho máximo de 100px */
+    max-height: 100px; /* Altura máxima de 100px */
+    border: 2px solid #000000; /* Borde negro */
+    border-radius: 15px; /* Bordes redondeados */
+    background-size: cover; /* Cubrir todo el cuadrado */
+    background-position: center; /* Centrar la imagen */
+    margin-right: 20px; /* Espacio a la derecha del cuadrado */
+}
+
+/* Estilos para la sección del perfil */
+.profile-section {
+    display: flex; /* Usar Flexbox */
+    align-items: center; /* Alinear elementos verticalmente */
+    width: 100%; /* Ancho total */
+    padding: 10px; /* Padding interno */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+    background-color: transparent; /* Fondo transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para los detalles del gato */
+.cat-details {
+    text-align: left; /* Texto alineado a la izquierda */
+    color: #333333; /* Color del texto */
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #FFA500; /* Color de fondo naranja */
+    color: #FFFFFF; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 20px; /* Padding interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    width: 80%; /* Ancho del 80% del contenedor */
+    max-width: 300px; /* Ancho máximo de 300px */
+    height: auto; /* Altura automática */
+    margin-top: 20px; /* Espacio superior */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones para animaciones */
+}
+
+button:hover {
+    background-color: #FF8C00; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilos para las secciones */
+.section {
+    width: 100%; /* Ancho total */
+    padding: 10px; /* Padding interno */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+    background-color: transparent; /* Fondo transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+    color: #333333; /* Color del texto */
+}
+
+/* Estilos para la configuración de horarios */
+.meal-schedule {
+    display: flex; /* Usar Flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+}
+
+.time-input {
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.time-input label {
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 5px; /* Margen inferior */
+    font-weight: bold; /* Texto en negrita */
+    color: #333333; /* Color del texto */
+}
+
+.time-input input {
+    width: 100%; /* Ancho total */
+    padding: 10px; /* Padding interno */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para las tips */
+.tip {
+    background-color: #FFFFFF; /* Fondo blanco */
+    border: 1px solid #000000; /* Borde negro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno */
+    margin: 10px 0; /* Margen vertical */
+    width: 100%; /* Ancho total */
+    text-align: center; /* Texto centrado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.tip:hover {
+    background-color: #FFA500; /* Fondo naranja */
+    color: #FFFFFF; /* Color del texto blanco */
+}
+
+/* Estilos para la tabla de historial */
+table {
+    width: 100%; /* Ancho total */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 20px 0; /* Margen vertical */
+}
+
+th, td {
+    border: 1px solid #000000; /* Borde negro */
+    padding: 5px; /* Padding interno */
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+thead {
+    background-color: #FFA500; /* Fondo naranja */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #F5F5F5; /* Fondo gris claro */
+}
+
+/* Estilos para el toggle button */
+.toggle-btn {
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #FFA500; /* Color del texto naranja */
+    border: 2px solid #FFA500; /* Borde naranja */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 20px; /* Padding interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    width: 100%; /* Ancho total */
+    text-align: center; /* Texto centrado */
+    margin-bottom: 10px; /* Espacio inferior */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transiciones para animaciones */
+}
+
+.toggle-btn:hover {
+    background-color: #FFA500; /* Fondo naranja */
+    color: #FFFFFF; /* Color del texto blanco */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilos para las secciones desplegables */
+.toggle-section {
+    display: none; /* Ocultar por defecto */
+}
+
+/* Estilos para el switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #FFA500;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Estilos para el botón de volver */
+.back-btn {
+    background-color: #FFA500; /* Color de fondo naranja */
+    color: #FFFFFF; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 20px; /* Padding interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    width: 100px; /* Ancho del botón */
+    margin-bottom: 20px; /* Espacio inferior */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones para animaciones */
+}
+
+.back-btn:hover {
+    background-color: #FF8C00; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilos para el mensaje de guardado */
+.save-message {
+    display: none; /* Ocultar por defecto */
+    position: fixed; /* Posición fija */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar la posición */
+    background-color: #FFA500; /* Fondo naranja */
+    color: #FFFFFF; /* Color del texto blanco */
+    padding: 20px; /* Padding interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 1000; /* Asegurarse de que esté por encima de todo */
+    text-align: center; /* Texto centrado */
+    font-size: 1.2rem; /* Tamaño de fuente */
+}
+
+/* Estilos para los formularios */
+.form-group {
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.form-group label {
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 5px; /* Margen inferior */
+    font-weight: bold; /* Texto en negrita */
+    color: #333333; /* Color del texto */
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="file"] {
+    width: 100%; /* Ancho total */
+    padding: 10px; /* Padding interno */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+}
+
+.form-group input[type="file"] {
+    display: none; /* Ocultar input de archivo */
+}
+
+.file-btn {
+    background-color: #FFA500; /* Color de fondo naranja */
+    color: #FFFFFF; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 20px; /* Padding interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    width: 100%; /* Ancho del botón */
+    text-align: center; /* Texto centrado */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones para animaciones */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.file-btn:hover {
+    background-color: #FF8C00; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Media Queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 600px) {
+    .square {
+        width: 70%; /* Ancho del 70% del contenedor */
+        height: auto; /* Altura automática para mantener proporciones */
+    }
+
+    .profile-pic {
+        width: 35vw; /* Ancho del 35% de la ventana */
+        height: 35vw; /* Altura del 35% de la ventana */
+    }
+
+    button {
+        width: 90%; /* Ancho del 90% del contenedor */
+        font-size: 0.9rem; /* Tamaño de fuente */
+    }
+
+    h2 {
+        font-size: 1rem; /* Tamaño de fuente */
+    }
+
+    .back-btn {
+        width: 80px; /* Ancho del botón */
+    }
+}
