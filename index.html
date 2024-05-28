@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=no, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CatFeeder</title>
     <!-- Vinculación del archivo CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -10,7 +10,9 @@
 <body>
     <!-- Pantalla de Inicio -->
     <div id="inicio" class="screen active">
-        <div class="square"></div>
+        <div class="square">
+            <img src="Logo.png" alt="Logo" class="logo">
+        </div>
         <button class="primary-btn" onclick="showCatDetailsForm()">Vamos</button>
     </div>
 
@@ -147,7 +149,7 @@
             <div class="tip" onclick="showTipDetails('tip7')">
                 <p>Horarios Regulares</p>
             </div>
-            <div class=" tip" onclick="showTipDetails('tip8')">
+            <div class="tip" onclick="showTipDetails('tip8')">
                 <p>Vigilar el Peso</p>
             </div>
             <div class="tip" onclick="showTipDetails('tip9')">
