@@ -40,15 +40,6 @@ body {
     border-radius: 15px; /* Bordes redondeados */
     margin-bottom: 20px; /* Espacio debajo del cuadrado */
     background-color: #FFFFFF; /* Fondo blanco */
-    display: flex; /* Usar Flexbox para centrar la imagen */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-}
-
-/* Estilos para el logo */
-.logo {
-    max-width: 100%; /* Ancho máximo 100% */
-    max-height: 100%; /* Altura máxima 100% */
 }
 
 /* Estilos para la foto de perfil */
